@@ -1,9 +1,9 @@
-html{
-  font-size: 62.5%;/* 16px x 62.5 = 10px = 1rem */
+html {
+  font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   height: 100vh;
   font-size: 1.6rem;
@@ -18,23 +18,23 @@ body{
 /* Layout */
 .grid-container {
   display: grid;
-  grid-template-areas: 
-      'header'
-      'main'
-      'footer';
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 8rem 1fr 5rem;
   height: 100%;
 }
-header{
+header {
   grid-area: header;
   background-color: #203040;
 }
-main{
+main {
   grid-area: main;
   padding: 1rem;
 }
-footer{
+footer {
   grid-area: footer;
   background-color: #203040;
   color: #ffffff;
@@ -42,9 +42,9 @@ footer{
 /* Common */
 a {
   text-decoration: none; /*removes underline links*/
-
 }
-a:hover { /* the color when you mouse over a link*/
+a:hover {
+  /* the color when you mouse over a link*/
   color: #ff8000;
 }
 ul {
@@ -55,6 +55,9 @@ ul {
 li {
   margin-top: 1rem;
 }
+input,
+select,
+textarea,
 button {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -66,6 +69,13 @@ button {
   background-color: #f8f8f8;
   cursor: pointer;
 }
+button {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+input:hover,
+select:hover,
+textarea:hover,
 button:hover {
   border: 0.1rem #404040 solid;
 }
@@ -76,7 +86,8 @@ button.block {
   width: 100%;
 }
 /* Header */
-header a { /* "header a" means all links inside header */
+header a {
+  /* "header a" means all links inside header */
   color: #ffffff;
   padding: 1rem;
 }
@@ -107,7 +118,7 @@ a.brand {
 /* Image */
 img {
   border-radius: 0.5rem;
-} 
+}
 img.medium {
   max-width: 29rem;
   width: 100%;
@@ -126,7 +137,8 @@ img.large {
 .card-body {
   padding: 1rem;
 }
-.card-body > * { /* "> *" means that all direct child of card-body create margin-bottom of 0.5rem*/
+.card-body > * {
+  /* "> *" means that all direct child of card-body create margin-bottom of 0.5rem*/
   margin-bottom: 0.5rem;
 }
 .price {
