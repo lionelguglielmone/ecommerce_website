@@ -57,7 +57,7 @@ export default function ProductScreen(props) {
               <div className="card card-body">
                 <ul>
                   <li>
-                    <div class="row">
+                    <div className="row">
                       <div>Price</div>
                       <div className="price">${product.price}</div>
                     </div>
@@ -72,6 +72,7 @@ export default function ProductScreen(props) {
                       </div>
                     </div>
                   </li>
+
                   {product.countInStock > 0 && (
                     <>
                       <li>
